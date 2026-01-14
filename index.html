@@ -348,9 +348,9 @@
 
         async function fetchNews(category = 'general', query = '') {
             try {
-                let url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=fr&country=fr&max=50&apikey=6a4acf2ec88382060a470019acf7cf3`;
+                let url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=fr&country=fr&max=50&apikey=6a4acf2ec883382060a470019acf7cf3`;
                 if (query) {
-                    url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=fr&max=50&apikey=6a4acf2ec88382060a470019acf7cf3`;
+                    url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=fr&max=50&apikey=6a4acf2ec883382060a470019acf7cf3`;
                 }
                 const response = await fetch(url);
                 if (!response.ok) throw new Error('Erreur réseau');
